@@ -56,8 +56,8 @@ async function closeTicket(interaction, ticketChannel) {
     .setTitle('🔴 Ticket Closed')
         .setColor('#ff0000')
   .setDescription(`**Your ticket has been closed successfully.** \n\n- If you have any further questions, feel free to open a new ticket.`)
-        .setImage('https://cdn.discordapp.com/attachments/1209503146485747723/1209507551184556054/2.png?ex=65e72caf&is=65d4b7af&hm=30b0b243fe24521a08f0cc49025bc28ba0bf78be82a1d02013c0c27c190d9ada&')
-    .setFooter({ text: 'Thank You for Using Our Ticket Service!', iconURL:'https://cdn.discordapp.com/attachments/1209503146485747723/1209503206871400458/5620-ticket.png?ex=65e728a4&is=65d4b3a4&hm=93bae44d478db895734ef9dfe86325b453e905c64101a20161075b153b91490d&'})
+        .setImage('https://cdn.discordapp.com/attachments/1217590569228828773/1218456637161996288/Picsart_24-03-09_07-55-42-782.png?ex=6607bb2c&is=65f5462c&hm=b982132393367004ae66ac38dabd3d792ff6c5c12ec95c56b754b0c2d9157aa3&')
+    .setFooter({ text: 'Thank You for Using Our Ticket Service!', iconURL: 'https://cdn.discordapp.com/attachments/1218030858502541433/1218604397207228487/Picsart_24-02-23_10-06-56-512.png?ex=660844c8&is=65f5cfc8&hm=0178dcd85f3d9e8350016280d4417f81aa6eb6e03d2bc2ba19197af6426219e2&'})
      .setTimestamp();
 await ticketOwner.send({ embeds: [confirmationEmbed] });
 
@@ -146,7 +146,7 @@ async function createTicket(interaction, ticketChannel) {
       .setColor('#0099ff')
       .setTitle('Ticket Details')
      .setDescription(`📩 **Ticket opened by ${interaction.user}**\n▶️ **Ticket Number: ${ticketNumber}**\n\n\- Please provide a detailed description of your issue or request below.\n- Our support team will assist you as soon as possible.`)
-    .setFooter({ text: 'Your satisfaction is our priority ', iconURL: 'https://cdn.discordapp.com/attachments/1209503146485747723/1209503207177457714/6280-2.gif?ex=65e728a4&is=65d4b3a4&hm=518c747e5e4fb9306c746b1588dd220fe185c7083254731d1c904f8042ad9f61&' });
+    .setFooter({ text: 'Your satisfaction is our priority ', iconURL: 'https://cdn.discordapp.com/attachments/1218030858502541433/1218604397207228487/Picsart_24-02-23_10-06-56-512.png?ex=660844c8&is=65f5cfc8&hm=0178dcd85f3d9e8350016280d4417f81aa6eb6e03d2bc2ba19197af6426219e2&' });
     const createTicketButton = new ButtonBuilder()
       .setCustomId('close_ticket')
       .setLabel('🔒 Close Ticket')
@@ -160,8 +160,8 @@ async function createTicket(interaction, ticketChannel) {
         .setTitle('✅ Ticket Opened')
             .setColor('#2bff00')
       .setDescription(` **Your ticket number is ${ticketNumber} ** \n\n-  Our team will assist you shortly. Please hang tight!\n- Feel free to mention Support team for any urgent assistance.`)
-       .setImage('https://cdn.discordapp.com/attachments/1209503146485747723/1209507551683805204/1.png?ex=65e72caf&is=65d4b7af&hm=3eb4ab1565f7818bf94cdc37343be288cd7ae1792197374ee8d43a82d18cd526&')
-    .setFooter({ text: 'Your satisfaction is our priority! ', iconURl:'https://cdn.discordapp.com/attachments/1209503146485747723/1209503207685103677/8917-blurple-ticket.png?ex=65e728a4&is=65d4b3a4&hm=dc0e876211f155590f3d35e543f9d205acee0df356c7d13b07ad675051bc82bf&'})
+       .setImage('https://cdn.discordapp.com/attachments/1217590569228828773/1218456637161996288/Picsart_24-03-09_07-55-42-782.png?ex=6607bb2c&is=65f5462c&hm=b982132393367004ae66ac38dabd3d792ff6c5c12ec95c56b754b0c2d9157aa3&')
+    .setFooter({ text: 'Your satisfaction is our priority! ', iconURl:'https://cdn.discordapp.com/attachments/1218030858502541433/1218604397207228487/Picsart_24-02-23_10-06-56-512.png?ex=660844c8&is=65f5cfc8&hm=0178dcd85f3d9e8350016280d4417f81aa6eb6e03d2bc2ba19197af6426219e2&'})
      .setTimestamp();
     await ticketOwner.send({ embeds: [confirmationEmbed] });
     
@@ -254,12 +254,12 @@ module.exports = {
               const fixedTicketEmbed = new EmbedBuilder()
                 .setColor('#0099ff')
                 .setTitle('🎟️ Welcome to Ticket Support')
-                .setImage('https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif')
+                .setImage('https://cdn.discordapp.com/attachments/1217590569228828773/1218456637161996288/Picsart_24-03-09_07-55-42-782.png?ex=6607bb2c&is=65f5462c&hm=b982132393367004ae66ac38dabd3d792ff6c5c12ec95c56b754b0c2d9157aa3&')
               .setDescription('Thank you for choosing our ticket system for support. Please click the button below to create a new ticket.\n\n' +
                  '**Ticket Guidelines:**\n' +
                  '- Empty tickets are not permitted.\n' +
                  '- Please be patient while waiting for a response from our support team.')
-              .setFooter({ text: 'We are here to Help!', iconURL:'https://cdn.discordapp.com/attachments/1209499496732692580/1209514764531924992/1667-yellow-gears.gif?ex=65e73367&is=65d4be67&hm=10e9c542cab73102272ecb710cb58f11e581d7c6e9bf7d7c9da6217cda3928b9&'});
+              .setFooter({ text: 'We are here to Help!', iconURL:'https://cdn.discordapp.com/attachments/1218030858502541433/1218604397207228487/Picsart_24-02-23_10-06-56-512.png?ex=660844c8&is=65f5cfc8&hm=0178dcd85f3d9e8350016280d4417f81aa6eb6e03d2bc2ba19197af6426219e2&'});
 
               const createTicketButton = new ButtonBuilder()
                 .setCustomId('create_ticket')
